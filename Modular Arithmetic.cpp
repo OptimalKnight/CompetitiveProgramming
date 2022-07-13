@@ -3,7 +3,7 @@ using namespace std;
 
 #define ll long long
 
-class MFun {
+class MFun{
     private:
         ll N,M;
         vector<ll> fac,invfac;
