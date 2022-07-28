@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define ll long long
-
 class MFun{
+    #define ll long long
+    
     private:
         ll N,M;
         vector<ll> fac,invfac;
@@ -19,7 +19,6 @@ class MFun{
                 A=(A*A)%M;
                 B=(B>>1LL)%M;
             }
-
             return ans;
         }
 
@@ -47,7 +46,6 @@ class MFun{
             if(!R){
                 return 1;
             }
-
             return (fac[N]*invfac[R]%M*invfac[N-R]%M)%M;
         }
 };
