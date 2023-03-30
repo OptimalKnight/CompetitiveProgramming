@@ -4,7 +4,7 @@ A trie, also known as a prefix tree, is a tree-like data structure used for effi
 
 ## Output
 
-The output for the above sample program would be,
+The output for the provided sample program would be,
 
     'abcde' is present in the list: 0
     'abcd' is present in the list: 1
