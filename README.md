@@ -5,16 +5,18 @@ In this repository, I have compiled a collection of templates for frequently use
 
 ## Links
 
-- Codeforces
+- **Codeforces**
     1. [OptimalKnight](https://codeforces.com/profile/OptimalKnight)
     2. [OptimalNight](https://codeforces.com/profile/OptimalNight)
 
-- CodeChef
+- **CodeChef**
     1. [OptimalKnight](https://www.codechef.com/users/optimalknight)
     2. [OptimalNight](https://www.codechef.com/users/optimalnight)
 
-- AtCoder
+- **AtCoder**
     1. [OptimalKnight](https://atcoder.jp/users/OptimalKnight)
+
+You get the idea.
 
 ## Overview
 
