@@ -65,10 +65,12 @@ public:
         lazy.assign(4 * maxn + 10, 0);
     }
 
+    // Update wrapper function
     void update(int low, int high, int value) {
         _update(1, 1, maxn, low, high, value);
     }
 
+    // Query wrapper function
     int query(int low, int high) {
         return _query(1, 1, maxn, low, high);
     }
