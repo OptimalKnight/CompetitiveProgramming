@@ -7,11 +7,13 @@ using namespace std;
 // Implementation of the disjoing set union data structure
 class DisjoingSetUnion {
 private:
+    int maxn;
     vector<int> parent;
 
 public:
     // Class constructor
     DisjoingSetUnion(int N) {
+        maxn = N;
         parent.assign(N + 1, -1);
     }
 

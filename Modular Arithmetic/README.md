@@ -7,4 +7,4 @@ Modular arithmetic is a system of arithmetic where calculations are performed mo
     Factorial of 97 (modulo 1000000007): 275417893
     Inverse factorial of 97 (modulo 1000000007): 267903845
     97 raised to power 97 (modulo 1000000007): 489000099
-    Number of ways of chossing 47 objects out of 97 objects (modulo 1000000007): 15
+    Number of ways of chossing 47 objects out of 97 objects (modulo 1000000007): 368362674

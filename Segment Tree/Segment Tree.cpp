@@ -11,6 +11,7 @@ private:
     int maxn;
     vector<int> seg, lazy;
 
+    // Auxiliary function to help perform the update when required (addition)
     void pushDown(int node, int L, int R) {
         if (lazy[node] != 0) {
             seg[node] += lazy[node] * (R - L + 1);
@@ -22,51 +23,54 @@ private:
         }
     }
 
-    void _update(int node, int L, int R, int lo, int hi, int val) {
+    // Function to perform the given update (addition) in a given range in the tree
+    void _update(int node, int L, int R, int low, int high, int value) {
         pushDown(node, L, R);
-        if (L > R or L > hi or R < lo) {
+        if (L > R or L > high or R < low) {
             return;
         }
-        if (L >= lo and R <= hi) {
-            lazy[node] += val;
+        if (L >= low and R <= high) {
+            lazy[node] += value;
             pushDown(node, L, R);
             return;
         }
 
         int mid = L + (R - L) / 2;
-        _update(2 * node, L, mid, lo, hi, val);
-        _update(2 * node + 1, mid + 1, R, lo, hi, val);
+        _update(2 * node, L, mid, low, high, value);
+        _update(2 * node + 1, mid + 1, R, low, high, value);
         seg[node] = min(seg[2 * node], seg[2 * node + 1]);
     }
 
-    int _query(int node, int L, int R, int lo, int hi) {
+    // Function to query (minimum) and get the required element from a given range
+    int _query(int node, int L, int R, int low, int high) {
         pushDown(node, L, R);
-        if (L > R or L > hi or R < lo) {
+        if (L > R or L > high or R < low) {
             return inf;
         }
-        if (L >= lo and R <= hi) {
+        if (L >= low and R <= high) {
             return seg[node];
         }
 
         int mid = L + (R - L) / 2;
-        int que1 = _query(2 * node, L, mid, lo, hi);
-        int que2 = _query(2 * node + 1, mid + 1, R, lo, hi);
+        int que1 = _query(2 * node, L, mid, low, high);
+        int que2 = _query(2 * node + 1, mid + 1, R, low, high);
         return min(que1, que2);
     }
 
 public:
+    // Class constructor
     SegmentTree(int N) {
         maxn = N;
         seg.assign(4 * maxn + 10, 0);
         lazy.assign(4 * maxn + 10, 0);
     }
 
-    void update(int lo, int hi, int val) {
-        _update(1, 1, maxn, lo, hi, val);
+    void update(int low, int high, int value) {
+        _update(1, 1, maxn, low, high, value);
     }
 
-    int query(int lo, int hi) {
-        return _query(1, 1, maxn, lo, hi);
+    int query(int low, int high) {
+        return _query(1, 1, maxn, low, high);
     }
 };
 
