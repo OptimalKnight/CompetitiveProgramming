@@ -4,7 +4,7 @@ The lowest common ancestor (LCA) of two nodes in a tree is the deepest node that
 
 ## Usage
 
-To use the LCA data structure, you can create an instance of the class and provide the tree, number of elements in the tree, and the maximum number of bits required to represent a node as a binary number, tree, N, and D, respectively, to the constructor. The constructor performs some precalculations to build the data structure, which takes O(N log N) time.
+To use the LCA data structure, you can create an instance of the class and provide the tree, number of elements in the tree, and the maximum number of bits required to represent a node as a binary number as tree, N, and D, respectively, to the constructor. The constructor performs some precalculations to build the data structure, which takes O(nlog2(n)) time.
 
 Once you've created the LCA data structure, you can easily find the LCA of two nodes in the tree by calling the respective method. This method takes two node indices as arguments and returns the index of the LCA. You can also find the distance between any two nodes in the tree by using a combination of the LCA and some basic arithmetic.
 
