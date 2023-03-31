@@ -4,7 +4,7 @@ Disjoint set union, also known as union-find data structure, is a data structure
 
 ## Usage
 
-The DSU (Disjoint Set Union) data structure is a useful tool for solving problems related to connected components in graphs. To use the DSU data structure, you can instantiate an object of the class and provide the maximum number of elements in a set as the parameter N.
+The DSU (Disjoint Set Union) data structure is a useful tool for solving problems related to connected components in graphs. To use the DSU data structure, you can instantiate an object of the class and provide the maximum number of elements in a set as the parameter N. This implementation also includes the path compression and union by rank heuristics as well.
 
 When you create an instance of the DSU class, a set containing only the element itself is created in the constructor. You can then use the union method to unite two different sets. This is done by finding the representative element of each set and making one of them the parent of the other. By doing this, all elements in both sets become part of the same connected component.
 
