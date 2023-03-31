@@ -6,6 +6,16 @@ GCD: The greatest common divisor (GCD), also known as the highest common factor 
 
 Power function: The power function is a mathematical function that takes a base number and raises it to an exponent. For example, the power function of x raised to the exponent of n is denoted as x^n. The result of the power function is the base number multiplied by itself n times. For example, 2^3 is equal to 2 multiplied by itself three times, which equals 8.
 
+## Usage
+
+To utilize these functions, simply call the corresponding function with the necessary parameters.
+
+## Time Complexity
+
+- _ceiling(A, B): O(1)
+- _gcd(A, B): O(log2(B))
+- power(A, B): O(log2(B))
+
 ## Output
 
 The output for the provided sample program would be,

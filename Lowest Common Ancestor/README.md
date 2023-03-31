@@ -12,8 +12,8 @@ The LCA data structure is highly efficient and can be used to solve a wide range
 
 ## Time Complexity
 
-- Constructor(tree, N, D): O(nlog2(n))
-- getLCA(u, v): O(log2(n))
+- Constructor(tree, N, D): O(Nlog2(N))
+- getLCA(u, v): O(log2(N))
 - getDist(u, v): O(1)
 
 ## Output

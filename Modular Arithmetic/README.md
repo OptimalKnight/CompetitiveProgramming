@@ -10,7 +10,7 @@ After initializing the object, the constructor will initialize the factorials an
 
 ## Time Complexity
 
-- Constructor(N, M): O(n)
+- Constructor(N, M): O(N)
 - mpow(A, B): O(log2(B))
 - invmod(A): O(log2(A))
 - nCr(N, R): O(1)

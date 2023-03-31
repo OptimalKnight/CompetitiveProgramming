@@ -12,7 +12,7 @@ In addition to uniting sets, you can also find the representative element of a s
 
 ## Time Complexity
 
-- Constructor(N): O(n)
+- Constructor(N): O(N)
 - find(num): amortized O(1)
 - size(num): O(1)
 - Union(x, y): amortized O(1)

@@ -18,9 +18,9 @@ One of the advantages of the Segment Tree data structure is its flexibility. You
 
 ## Time Complexity
 
-- Constructor(N): O(n)
-- update(low, high, value): O(log2(n))
-- query(low, high): O(log2(n))
+- Constructor(N): O(N)
+- update(low, high, value): O(log2(N))
+- query(low, high): O(log2(N))
 
 ## Output
 

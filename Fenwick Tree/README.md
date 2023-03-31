@@ -14,9 +14,9 @@ Overall, the Fenwick data structure is a versatile and efficient way to perform 
 
 ## Time Complexity
 
-- Constructor(N): O(n)
-- update(index, value): O(log2(n))
-- query(index): O(log2(n))
+- Constructor(N): O(N)
+- update(index, value): O(log2(N))
+- query(index): O(log2(N))
 
 ## Output
 
