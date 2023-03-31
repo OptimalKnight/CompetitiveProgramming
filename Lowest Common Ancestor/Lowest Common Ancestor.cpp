@@ -64,7 +64,7 @@ public:
     }
 
     // Function to get distance between the two given nodes
-    int getDist(int u, int v) {
+    int getDistance(int u, int v) {
         return dist[u] + dist[v] - (2 * dist[getLCA(u, v)]);
     }
 };
@@ -75,5 +75,5 @@ signed main() {
     LowestCommonAncestor obj(V, N, D);
 
     cout << "Lowest common ancestor of 2 and 4 (0-indexed): " << obj.getLCA(2, 4) << endl;
-    cout << "Distance between 2 and 4 (0-indexed) in the tree: " << obj.getDist(2, 4) << endl;
+    cout << "Distance between 2 and 4 (0-indexed) in the tree: " << obj.getDistance(2, 4) << endl;
 }
